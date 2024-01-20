@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <img src="logo.png" alt="Your Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#plans">Internet Plans</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+  
+    <div class="customization-form">
+        <h1>Explore Our Internet Plans</h1>
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+            <option value="₹" selected>INR</option>
+            <option value="$">USD</option>
+            <option value="€">EUR</option>
+        </select>
+
+        <label for="unit">Select Unit:</label>
+        <select id="unit">
+            <option value="/month">Per Month</option>
+            <option value="/year">Per Year</option>
+        </select>
+    </div>
+
+    <div class="pricing-container">
+        <div class="pricing-card basic-plan" data-price-inr="299">
+            <h2>Basic Plan</h2>
+            <p>Perfect for casual browsing and emails.</p>
+            <div class="price-toggle">
+                <span class="currency">₹</span>
+                <span class="price">299.00</span>
+                <span class="unit">/month</span>
+            </div>
+            <button onclick="selectPlan('Basic Plan')">Select</button>
+        </div>
+
+        <div class="pricing-card pro-plan" data-price-inr="499">
+            <h2>Pro Plan</h2>
+            <p>Great for streaming and moderate usage.</p>
+            <div class="price-toggle">
+                <span class="currency"></span>
+                <span class="price">499.00</span>
+                <span class="unit">/month</span>
+            </div>
+            <button onclick="selectPlan('Pro Plan')">Select</button>
+        </div>
+
+        <div class="pricing-card premium-plan" data-price-inr="699">
+            <h2>Premium Plan</h2>
+            <p>Best for gaming, streaming, and heavy usage.</p>
+            <div class="price-toggle">
+                <span class="currency">₹</span>
+                <span class="price">699.00</span>
+                <span class="unit">/month</span>
+            </div>
+            <button onclick="selectPlan('Premium Plan')">Select</button>
+        </div>
+    </div>
+
+    <section class="container" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our Internet Plans platform! We are dedicated to providing high-quality and reliable internet services to enhance your online experience. Our mission is to connect people and communities through fast and affordable internet solutions.</p>
+        <p>With years of experience in the industry, our team is passionate about delivering cutting-edge technology and exceptional customer service. We understand the importance of a seamless online connection for both work and leisure, and we strive to exceed your expectations.</p>
+        <div class="pride-section">
+            <h3>We Take Pride In</h3>
+            <div class="pride-block">
+                <p class="pride-title">Reliable and High-Speed Internet Services</p>
+                <p class="pride-description">Our commitment to providing reliable and high-speed internet services ensures that you can enjoy a seamless online experience for work, entertainment, and communication.</p>
+            </div>
+            <div class="pride-block">
+                <p class="pride-title">Exceptional Customer Support</p>
+                <p class="pride-description">Our dedicated customer support team is here to assist you with any queries or issues. We take pride in offering exceptional customer service to ensure your satisfaction.</p>
+            </div>
+            <div class="pride-block">
+                <p class="pride-title">Continuous Innovation in Technology</p>
+                <p class="pride-description">We stay at the forefront of technology to bring you the latest innovations. Our continuous efforts in technology ensure that you benefit from cutting-edge solutions for your internet needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
